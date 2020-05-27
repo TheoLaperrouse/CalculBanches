@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calcul Banches Piscine</string>
+    <string name="title_activity_plan">Plan</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appli.theolaperrouse.edeneau.MainActivity">
+
+    <EditText
+        android:id="@+id/longueur"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Titre"
+        android:layout_alignStart="@+id/butValid"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Longueur"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titre" />
+
+    <EditText
+        android:id="@+id/largeur"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/longueur"
+        android:layout_alignStart="@+id/butValid"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Largeur"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longueur" />
+
+
+    <EditText
+        android:id="@+id/nomClient"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/largeur"
+        android:layout_alignEnd="@+id/butValid"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nom Client"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/largeur" />
+
+    <TextView
+        android:id="@+id/Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:text="Application de Calcul de Banches! \n (en mètres)"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butValid"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Volets"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Volets" />
+
+    <Switch
+        android:id="@+id/Volets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomClient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Fosse Volet : "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomClient" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/longueur"
+        android:src="@mipmap/logo"
+        app:layout_constraintBottom_toTopOf="@+id/Titre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
